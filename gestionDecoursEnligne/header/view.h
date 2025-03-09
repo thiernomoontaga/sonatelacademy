@@ -3,5 +3,7 @@
 
 void afficherMenuPrincipal();
 void afficherMenuEtudiant();
+void afficherMenuProfeseur();
+void afficherMenuAdmin();
 
 #endif

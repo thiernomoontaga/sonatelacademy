@@ -1,4 +1,3 @@
-# sonatelacademy
 # GESTION DE PLATEFORME DE COURS EN LIGNE
 
 ## Description
@@ -75,5 +74,6 @@ Ce projet vise à renforcer les compétences en :
    ```
 
 ## Auteur
-- Thierno segnane , apprenant a la SONATEL ACADEMY , DEV WEB MOBILE .
+- **Thierno segnane, apprenant a la sonatel academy Dev web mobile **
+
 
