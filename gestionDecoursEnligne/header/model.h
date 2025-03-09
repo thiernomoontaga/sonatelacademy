@@ -1,28 +1,47 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-typedef struct {
+typedef struct
+{
     int id;
     char nom[50];
-    char email[50];
+    char email[50]
+
+} utilisateurs;
+
+typedef struct
+{
+    utilisateurs U;
     float credit;
 } Etudiant;
 
-typedef struct {
-    int id;
-    char nom[50];
-    char email[50];
+typedef struct
+{
+    utilisateurs U;
     float solde;
 } Professeur;
+typedef struct
+{
+    utilisateurs U;
+} Admin;
 
-typedef struct {
+typedef struct
+{
     int id;
     char titre[100];
     int professeur_id;
     float prix;
+    sessions S;
 } Cours;
 
-void sauvegarderEtudiants(Etudiant *etudiants, int count);
-void chargerEtudiants(Etudiant *etudiants, int *count);
+typedef struct
+{
+    int jjd;
+    int mmd;
+    int aad;
+    int jjf;
+    int mmf;
+    int aaf;
+} sessions;
 
 #endif
