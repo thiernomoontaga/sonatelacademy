@@ -1,4 +1,4 @@
-# Thierno Moontaga - Projets Sonatel Academy
+# Thierno segnane - Projets Sonatel Academy
 
 Bienvenue dans ce repository qui regroupe tous mes projets réalisés durant ma formation en **Développement Web & Mobile Fullstack** à la **Sonatel Academy**. Ce repository me sert de **base de données** et me permet de publier tout ce que je fais en termes de projets.
 
@@ -31,7 +31,7 @@ Voici une liste des projets que j'ai développés durant la formation :
 ## 📩 Me contacter
 Si vous avez des questions ou souhaitez collaborer sur un projet, n'hésitez pas à me contacter :
 - **GitHub** : [thiernomoontaga](https://github.com/thiernomoontaga)
-- **LinkedIn** : [Thierno segnane](https://www.linkedin.com/in/thierno-segnane)
+- **LinkedIn** : [Thierno segnane](www.linkedin.com/in/thierno-segnane-19a910249)
 - **Email** : thiernosegnane316@gmail.com
 
 ---
