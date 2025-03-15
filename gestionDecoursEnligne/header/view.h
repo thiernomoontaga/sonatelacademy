@@ -1,9 +1,14 @@
 #ifndef VIEW_H
 #define VIEW_H
 
-void afficherMenuPrincipal();
-void afficherMenuEtudiant();
-void afficherMenuProfeseur();
-void afficherMenuAdmin();
+#include "constant.h"
+
+void displayMainMenu();
+void displayStudentMenu();
+void displayProfessorMenu();
+void displayAdminMenu();
+
+void displayCourses();
+void displayCertifications(int studentId);
 
 #endif

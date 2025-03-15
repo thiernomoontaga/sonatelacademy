@@ -1,29 +1,50 @@
 #include "view.h"
-#include <stdio.h>
 
-void afficherMenuPrincipal() {
-    printf("1. Connexion\n");
-    printf("2. Inscription\n");
-    printf("3. Quitter\n");
+void displayMainMenu()
+{
+    printf("1. Student Login\n");
+    printf("2. Professor Login\n");
+    printf("3. Admin Login\n");
+    printf("4. Exit\n");
 }
 
-void afficherMenuEtudiant() {
-    printf("1. Acheter des crédits\n");
-    printf("2. S'inscrire à un cours\n");
-    printf("3. Passer une certification\n");
-    printf("4. Voir mes certifications\n");
-    printf("5. Déconnexion\n");
-}
-void afficherMenuProfeseur(){
-    printf("1.creer un cours\n");
-    printf("2.voir son solde\n");
-    printf("3.creer une certification\n");
-    printf("4.Deconnexion\n");
+void displayStudentMenu()
+{
+    printf("1. Buy Course\n");
+    printf("2. Take Certification\n");
+    printf("3. View Certifications\n");
+    printf("4. Logout\n");
 }
 
-void afficherMenuAdmin() {
-    printf("1. Gérer les utilisateurs\n");
-    printf("2. Approuver des cours\n");
-    printf("3. Générer un rapport de certifications\n");
-    printf("4. Quitter\n");
+void displayProfessorMenu()
+{
+    printf("1. Create Course\n");
+    printf("2. View Balance\n");
+    printf("3. Logout\n");
+}
+
+void displayAdminMenu()
+{
+    printf("1. Manage Users\n");
+    printf("2. Logout\n");
+}
+
+void displayCourses()
+{
+    for (int i = 0; i < courseCount; i++)
+    {
+        printf("%d. %s (Price: %.2f)\n", courses[i].id, courses[i].title, courses[i].price);
+    }
+}
+
+void displayCertifications(int studentId)
+{
+    for (int i = 0; i < certificationCount; i++)
+    {
+        if (certifications[i].studentId == studentId)
+        {
+            Course *course = findCourseById(certifications[i].courseId);
+            printf("Course: %s, Score: %.2f, Passed: %s\n", course->title, certifications[i].score, certifications[i].isPassed ? "Yes" : "No");
+        }
+    }
 }

@@ -1,47 +1,18 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-typedef struct
-{
-    int id;
-    char nom[50];
-    char email[50]
+#include "constant.h"
 
-} utilisateurs;
+void loadData();
+void saveData();
 
-typedef struct
-{
-    utilisateurs U;
-    float credit;
-} Etudiant;
+void addUser(User user);
+User *findUserByEmail(const char *email);
 
-typedef struct
-{
-    utilisateurs U;
-    float solde;
-} Professeur;
-typedef struct
-{
-    utilisateurs U;
-} Admin;
+void addCourse(Course course);
+Course *findCourseById(int id);
 
-typedef struct
-{
-    int id;
-    char titre[100];
-    int professeur_id;
-    float prix;
-    sessions S;
-} Cours;
+void addCertification(Certification certification);
+Certification *findCertificationByStudentAndCourse(int studentId, int courseId);
 
-typedef struct
-{
-    int jjd;
-    int mmd;
-    int aad;
-    int jjf;
-    int mmf;
-    int aaf;
-} sessions;
-
-#endif
+#endif // MODEL_H
