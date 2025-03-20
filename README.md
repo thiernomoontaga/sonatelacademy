@@ -22,8 +22,8 @@ Voici une liste des projets que j'ai développés durant la formation :
 
 ### 2 **HTML & CSS** 🎓
 > c🎨Un dossier contenant plusieurs projets dédiés à l’apprentissage approfondi de HTML et CSS.
-**Objectif** : Approfondir les notions de mise en page, flexbox, grid, animations CSS, et responsive design.
-**Projets inclus** : DiceMaster, ecranTelephone, JeudeDe,JeudesNuages,Ludo,stade ...
+- **Objectif** : Approfondir les notions de mise en page, flexbox, grid, animations CSS, et responsive design.
+- **Projets inclus** : DiceMaster, ecranTelephone, JeudeDe,JeudesNuages,Ludo,stade ...
 
 ## 🛠️ Objectifs et apprentissages
 - 🔹 Améliorer mes compétences en **développement fullstack**
