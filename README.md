@@ -21,7 +21,7 @@ Voici une liste des projets que j'ai développés durant la formation :
 - **Fonctionnalités** : Inscription des étudiants, gestion des cours et des enseignants
 
 ### 2 **HTML & CSS** 🎓
-> gi🎨Un dossier contenant plusieurs projets dédiés à l’apprentissage approfondi de HTML et CSS.
+> 🎨Un dossier contenant plusieurs projets dédiés à l’apprentissage approfondi de HTML et CSS.
 - **Objectif** : Approfondir les notions de mise en page, flexbox, grid, animations CSS, et responsive design.
 - **Projets inclus** : DiceMaster, ecranTelephone, JeudeDe,JeudesNuages,Ludo,stade ...
 
