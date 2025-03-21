@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(#66b4df,#f2fcfe);
+    height: 910px;
+    display: flex;
+    
+}
+
+.nuage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nuage1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.nuage2{
+    height: 100%;
+    width: 20%;
+    border: 1px solid rebeccapurple;
+    
+}
+.nuage3{
+    height: 100%;
+    border: 1px solid rebeccapurple;
+    width: 20%;
+
+}
+.nuage4{
+    height: 100%;
+    border: 1px solid rebeccapurple;
+    width: 20%;
+
+}
+.nuage5{
+    height: 100%;
+    border: 1px solid rebeccapurple;
+    width: 20%;
+
+}
+.cloud{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    margin-top: 200px;
+}
+.rond{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fccd01;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+.barre1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.Bar{
+    height: 100%;
+    width: 9px;
+    background-color: #9e532c;
+}
+.bar{
+    height: 100%;
+    width: 9px;
+    background-color: #8b4312;
+}

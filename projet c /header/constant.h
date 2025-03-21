@@ -1,0 +1,10 @@
+#ifndef CONSTANT_H
+#define CONSTANT_H
+
+#define MAX_USERS 200
+#define MAX_COURS 50
+#define MAX_CERTIFICATIONS 100
+#define MAX_QUESTIONS 10
+#define PASSING_SCORE 70
+
+#endif
