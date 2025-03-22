@@ -1,6 +1,6 @@
 # Thierno segnane - Projets Sonatel Academy
 
-Bienvenue dans ce repository qui regroupe tous mes projets réalisés durant ma formation en **Développement Web & Mobile Fullstack** à la **Sonatel Academy**. Ce repository me sert de **base de données** et me permet de publier tout ce que je fais en termes de projets.
+Bienvenue dans ce repository qui regroupe tous mes projets réalisés durant ma formation en **Développement Web & Mobile Fullstack** à la **Sonatel Academy**. Ce repository me sert de **Portfolio** et me permet de publier tout ce que je fais en termes de projets.
 
 ## 📌 À propos de la formation
 La formation Fullstack Web Mobile de la **Sonatel Academy** permet d'acquérir des compétences solides en développement web et mobile, couvrant les technologies front-end et back-end, ainsi que les bonnes pratiques de génie logiciel.
