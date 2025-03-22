@@ -7,7 +7,7 @@
 
 
 body{
-    background: linear-gradient(#66b4df,#f2fcfe);
+    background: linear-gradient(#8fc8e7,#f2fcfe);
     height: 927px;
     display: flex;
     
@@ -26,28 +26,34 @@ body{
     width: 20%;
     display: flex;
     flex-direction: column;
+
 }
 .nuage2{
     height: 100%;
-    width: 20%;
+    width: 25%;
+    flex-direction: column;
+
+
     
 }
 .nuage3{
     height: 100%;
-    border: 1px solid rebeccapurple;
-    width: 20%;
+    width: 23%;
+
 
 }
 .nuage4{
     height: 100%;
-    border: 1px solid rebeccapurple;
     width: 20%;
+
 
 }
 .nuage5{
     height: 100%;
-    border: 1px solid rebeccapurple;
-    width: 20%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+
 
 }
 .cloud1{
@@ -62,7 +68,8 @@ body{
     border-radius: 50%;
     background-color: #fccd01;
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 228px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .barre1{
     width: 100%;
@@ -102,9 +109,10 @@ body{
 .carre1{
     height: 80%;
     width: 40px;
-    border: 2px solid #bc8f07;
+    border: 3px solid #bc8f07;
     background-color: #ffd602;
     margin-top: 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
 }
 .carre2{
@@ -112,14 +120,17 @@ body{
     width: 40px;
     border: 2px solid #864417;
     background-color: #66441d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     
 }
 .carre3{
     height: 80%;
     width: 40px;
-    border: 2px solid #bc8f07;
+    border: 3px solid #bc8f07;
     background-color: #ffd602;
     margin-top: 10px;
+    margin-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
 }
 
@@ -129,6 +140,7 @@ body{
     border-radius: 50%;
     background-color: #fccd01;
     margin-left: 210px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .barre2{
@@ -136,6 +148,89 @@ body{
     display: flex;
     flex-direction: row;
     height: 30px;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-left: 110px;
+}
+
+.cloud3{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    margin-top: 130px;
+    margin-left: 50px;
+
+}
+
+.rond3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fccd01;
+    margin-left: 200px;
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.barre3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.cloud4{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    margin-top: 160px;
+    margin-left: 70px;
+    position: absolute;
+    z-index: 2;
+
+}
+.rond4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fccd01;
+    margin-left: 60px;
+    position: relative;
+    margin-top: 240px;
+    z-index: 1;
+}
+
+.indice{
+    height: 40px;
+    width: 80px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2fcfe;
+    border-radius: 20px;
+    gap: 7px;
+    color: #f2fcfe;
+    margin-top: 16px;
+    background-color: rgba(240, 248, 255, 0.137);
+}
+
+.barre5{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 70px;
+    margin-left: 20px;
+    justify-content: flex-end;
+}
+
+.barre4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 120px;
 }
