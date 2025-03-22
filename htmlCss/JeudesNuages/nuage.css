@@ -1,6 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body{
     background: linear-gradient(#66b4df,#f2fcfe);
-    height: 910px;
+    height: 927px;
     display: flex;
     
 }
@@ -22,7 +30,6 @@ body{
 .nuage2{
     height: 100%;
     width: 20%;
-    border: 1px solid rebeccapurple;
     
 }
 .nuage3{
@@ -43,18 +50,18 @@ body{
     width: 20%;
 
 }
-.cloud{
+.cloud1{
     height: 100px;
     width: 200px;
     display: flex;
     margin-top: 200px;
 }
-.rond{
+.rond1{
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: #fccd01;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 250px;
 }
 .barre1{
@@ -62,16 +69,73 @@ body{
     display: flex;
     flex-direction: row;
     height: 30px;
-    border-radius: 25px;
     margin-top: 30px;
 }
 .Bar{
     height: 100%;
     width: 9px;
     background-color: #9e532c;
+
 }
 .bar{
     height: 100%;
     width: 9px;
     background-color: #8b4312;
+
+}
+.petitcarre{
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.cloud2{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    margin-top: 80px;
+
+}
+
+.carre1{
+    height: 80%;
+    width: 40px;
+    border: 2px solid #bc8f07;
+    background-color: #ffd602;
+    margin-top: 2px;
+
+}
+.carre2{
+    height: 80%;
+    width: 40px;
+    border: 2px solid #864417;
+    background-color: #66441d;
+    
+}
+.carre3{
+    height: 80%;
+    width: 40px;
+    border: 2px solid #bc8f07;
+    background-color: #ffd602;
+    margin-top: 10px;
+
+}
+
+.rond2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fccd01;
+    margin-left: 210px;
+}
+
+.barre2{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 110px;
 }
