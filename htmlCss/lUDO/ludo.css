@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ecranludo{
+    height: 700px;
+    width: 900px;
+    border: 1px solid #f7ce7f;
+    margin-top: 100px;
+    border-radius: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ce7f;
+}
+
+.centre{
+    height: 95%;
+    width: 95%;
+    border: 1px solid #f7ce7f;
+    border-radius: 140px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.fisrt{
+    height: 100%;
+    width: 33.33%;
+    border-radius: 140px 0px 0px 140px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.seconde{
+    height: 100%;
+    width: 33.33%;
+    border: 1px solid black;
+    flex-direction: column;
+    display: flex;
+}
+.three{
+    height: 100%;
+    width: 33.33%;
+    border: 1px solid black;
+    border-radius: 0px 140px 140px 0px;
+
+}
+.case1{
+    width: 100%;
+    height: 33.33%;
+    border-radius: 140px 0px 0px 0px;
+    background-color: #fe0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.case2{
+    width: 100%;
+    height: 33.33%;
+}
+.case3{
+    width: 100%;
+    height: 33.33%;
+    border-radius: 0px 0px 0px 140px;
+    background-color: #009b1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case4{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+}
+.case5{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+}
+.case6{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+}
+.case7{
+    width: 100%;
+    height: 33.33%;
+    border-radius: 0px 140px 0px 0px;
+    background-color: #006fdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case8{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+}
+.case9{
+    width: 100%;
+    height: 33.33%;
+    border-radius: 0px 0px 140px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fad32d;
+
+}
+
+.centrecase1{
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    background-color:#fe0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrecase2{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+.centrecase3{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+ .deirouge1{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .deirouge2{
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+
+ .rond1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fe0002;
+ }
+
+ .case2{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .petitcarre{
+    height: 100%;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .petitecase{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+ }
+
+ .petitecase1{
+    width: 100%;
+    height: 33.33%;
+    background-color: #fe0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ }
+  .petitecase2{
+    width: 100%;
+    height: 33.33%;
+    border: 1px solid black;
+    background-color: #fe0002;
+ }
+ .cercle{
+    height: 60%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+
+.centrecase3-1{
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #009b1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrecase3-2{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+
+.centrecase3-3{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+ .deivert1{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .deivert2{
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+
+ .rond2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #009b1e;
+ }
+
+ 
+
+
+ .centrecase7-1{
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #006fdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrecase7-2{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+
+.centrecase7-3{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+ .deibleu1{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .deibleu2{
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+
+ .rond3{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #006fdf;
+ }
+
+
+ .centrecase9-1{
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #fad32d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrecase9-2{
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+
+.centrecase9-3{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+ .deijaune1{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .deijaune2{
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+
+ .rond4{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fad32d;
+ }
