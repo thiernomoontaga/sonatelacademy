@@ -12,10 +12,10 @@ body{
 
 
 .ecranludo{
-    height: 700px;
+    height: 900px;
     width: 900px;
     border: 1px solid #f7ce7f;
-    margin-top: 100px;
+    margin-top: 10px;
     border-radius: 140px;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ body{
 
 .fisrt{
     height: 100%;
-    width: 33.33%;
+    width: 35%;
     border-radius: 140px 0px 0px 140px;
     display: flex;
     flex-direction: column;
@@ -44,21 +44,21 @@ body{
 
 .seconde{
     height: 100%;
-    width: 33.33%;
+    width: 30%;
     border: 1px solid black;
     flex-direction: column;
     display: flex;
 }
 .three{
     height: 100%;
-    width: 33.33%;
+    width: 35%;
     border: 1px solid black;
     border-radius: 0px 140px 140px 0px;
 
 }
 .case1{
     width: 100%;
-    height: 33.33%;
+    height: 40%;
     border-radius: 140px 0px 0px 0px;
     background-color: #fe0002;
     display: flex;
@@ -68,11 +68,11 @@ body{
 }
 .case2{
     width: 100%;
-    height: 33.33%;
+    height: 20%;
 }
 .case3{
     width: 100%;
-    height: 33.33%;
+    height: 40%;
     border-radius: 0px 0px 0px 140px;
     background-color: #009b1e;
     display: flex;
@@ -81,22 +81,26 @@ body{
 }
 .case4{
     width: 100%;
-    height: 33.33%;
-    border: 1px solid black;
+    height: 40%;
+    border: 1px solid rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .case5{
     width: 100%;
-    height: 33.33%;
+    height: 20%;
     border: 1px solid black;
 }
 .case6{
     width: 100%;
-    height: 33.33%;
+    height: 40%;
     border: 1px solid black;
 }
 .case7{
     width: 100%;
-    height: 33.33%;
+    height: 40%;
     border-radius: 0px 140px 0px 0px;
     background-color: #006fdf;
     display: flex;
@@ -105,12 +109,12 @@ body{
 }
 .case8{
     width: 100%;
-    height: 33.33%;
+    height: 20%;
     border: 1px solid black;
 }
 .case9{
     width: 100%;
-    height: 33.33%;
+    height: 40%;
     border-radius: 0px 0px 140px 0px;
     display: flex;
     justify-content: center;
@@ -148,14 +152,14 @@ body{
  .deirouge1{
     width: 100%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 34px;
     display: flex;
     justify-content: space-around;
  }
  .deirouge2{
     width: 100%;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -196,6 +200,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 
 
  }
@@ -247,14 +252,14 @@ body{
  .deivert1{
     width: 100%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 34px;
     display: flex;
     justify-content: space-around;
  }
  .deivert2{
     width: 100%;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -302,14 +307,14 @@ body{
  .deibleu1{
     width: 100%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 34px;
     display: flex;
     justify-content: space-around;
  }
  .deibleu2{
     width: 100%;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -355,14 +360,14 @@ body{
  .deijaune1{
     width: 100%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 34px;
     display: flex;
     justify-content: space-around;
  }
  .deijaune2{
     width: 100%;
     height: 30px;
-    margin-top: 25px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -375,4 +380,47 @@ body{
     width: 30px;
     border-radius: 50%;
     background-color: #fad32d;
+ }
+
+ .petitecase1blanc{
+    width: 100%;
+    height: 33.33%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .cercle_2{
+    height: 60%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #fe0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .ranger1{
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+ }
+
+  .ranger2{
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+ }
+  .ranger3{
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
  }
