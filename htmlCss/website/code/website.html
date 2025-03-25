@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+        <header> 
+            <div class="container">
+               
+                <div class="navigations">
+                    <div class="menu">
+                        <span class="logo">
+                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEtjZKAxYKSx+QwoFrysMakXbznTiMvSF7UmaSA5ieYzs3CpQTcDxYIXNab/Gf8zlIq3nu5BN+BFtbkFA+O/Q2Dx/0x2Eq0nT6CreVltWvKfkaFbouU03FwMC0Ca0C150WAlxvDn92UGBgYxqKGvGFhYdSUajr2CWQIzHOxDQhYgW/I/zZj1pRgTyOUWaC4+If7qnx3jrLO/kQ0n2gKYJf8ZGVUYGP6nYw9zxpmM///fAQULsjxRPqAkdY1aQDD0RoNoEAcRQaeRoYC+xTWoNCXDkRhaBjCZ1ppeZfjPoEWRLxgZrkk0n9aGmYESB89rTEIY/zO1MzD+VyHHEkYGhpv/GP7XSLacWYPVAnIMJaSHvqmIkGvIkQcAa9+KGTxm0zAAAAAASUVORK5CYII="/>
+                             <span>Luxe</span>
+                        </span>
+                        <nav>
+                            <ul>
+                                <li><a href="">collections</a></li>
+                                <li><a href="">Jeweiry</a></li>
+                                <li><a href="">Watch</a></li>
+                                <li><a href="">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="icon">
+                        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAntJREFUSEu1lEtoE1EUhv8zmYhB1CJK0Z1u3VTr1oWIFTc+QESFgqhUBIsUm5t2HplOJ3fiTKyvQrFgEUEqLgTdiAXpQt0VLWJ3bly5qA+wqKBM5ug0NsQ2SYeanNUcmPN/57/3nkNoclCT9VEV4Pb3bwqUoFcBtTPQVmqCpkE8VVSLVwcGhj7FbWwJIKeLTgaGAayvIfKFQKcN6T2OA/kH4BjpbjDdjAoZ9JCIRszc5ckotzWxVwEugHB43g/4pCEL95eDlAFWX982NRG+A6CA0Wu6/lC1YkcT1p+DHQDwPREmtmr5/Md6kDLA0dIjIDoP4IEp/eP1inK6eMrAfjCypus78QC6+ABgMyvUlnW8N/WKHCPdAaYJML8y3cKuuIBfAJKBmkrYth3WK7Ksng1qkPwM0JwpvVqPofT2FoQcXXwDsCZQU2tt246+a4Zlda9Tg9RXALOm9FvjOpgBsJ1Auw3pvaxXZGtij0KYBOiZKb198QCGcMHoB+OR6fpH6t6BnpkAuIOZOrOudy8WwLLEFjXA++geCJQ2pHelWuGgnvYIJABMm9LfGXsOoh8HtfQpIrqzMGgIwxvZfOFFlOf0zKEQfI6AA/OiTNeC5Ore5R7EklUxqGWOEfEogJbq3dEcI7z118UMiDNmrvCklpOqy05qWmuoBJfA3A7QDgA/AbwG43lxVXEsWnaOLqYAlGaAadhwvYsUbZhFseJ17RjiIBjlhcfA9az0exoGiIQcXYwDOFEWJeTNnK9VQlbsIBIZ7epKzm5sGQfhaIXomCn9swv5fwEqtsBtAGfm80UuGgKwLEtRiz/uEitvDen5DTui5YasZKjJ0XTAb7fp2hn0cUhTAAAAAElFTkSuQmCC"/></a>
+                        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVNJREFUSEvd1K1Ow1AUB/D/2SoGDwCeGYIDicTwDAQSggWDYGXZ7cdKP7JdxAzwAIDgETBoFAkOtclJkIiVHajoUpK268eaECpvzj2/c869vYSKP6o4P/4RYAuVFziuN92VG0G+2YgWCRAw0lzZ/AWE1V+Ic5fAnVLdMAzdk3YsYLbba0p9OiwB+L4yWbWswXssECzaQn0BsFUIIbrVnf5huDf2mjpCPWVgUASoMW8K7/I1Feh2z1bqk9r4p5l6LoTwrDtyO7on8UdzhPrIwG4egJn2DK//kBXYZ+A+BzD0laV1y7L8TIBpmg3F//wA0PC/ak2r1xvlwGahqW+RrbXuwHQAgq070qgAaO+Ap09ZEuuujC127mtqd1pXIDoCsJwGFQayVJ8WM7eDYLMj1GsGjgm40Vx5EiZMWs90i6JB0Zc2Ooqk9dxA5R2UOYdMZ/CngW/RoHYZGEEMoQAAAABJRU5ErkJggg=="/></a>
+                    </div>
+                </div>
+                <div class="texte1">
+                    <h1>Timeless Elegence</h1>
+                    <p>Discover our exclusive collection of handcrafted jewery and luxury timepiece</p>
+                    <div class="button" ><a href="" style="color: white;">Explore Collection</a></div>
+                </div>
+                <span class="chevron">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMhJREFUSEvtk1sKwjAQRc91Ea5SQUFBQURBUVCwoBt0HX6MBCKUmDbjo3/tb27OSW8youNPHfPpBcWG+4q+r8jMlsBQ0rSNYmYX4C6pyuWydxA3TeKGqkmS5PaSVqmkSXAFRrXwmySBh+hN0tglCCEzSyVHSaG2sHYAFjVYFh7WW59pRrIBBsDaAy8K4mlPwKzhos+S5m2PwDVoZpaTFOGuP3idLpG44B8JYl074CFpW5ywGHBV5IW5B+0XoHsO/iXpKyo22XlFTwFyQRlzWA8kAAAAAElFTkSuQmCC"/>
+                </span>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <h3>Our collections</h3>
+                <span> Explore Our carefully currated categorie</span>
+            </section>
+            <section class="images">
+                <div class="image1">
+                    <div class="overlay"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAedJREFUSEvdlU2IzWEUh5+HxfjIZhpZ+BoLsrCQhXxslI+NUkJZyNbCDhPZWUj5ysJCNhaSIsV6RNOUYsNGshCzk0mTEiF+7jv+dxrXHffOvWbj3b3v+zvnOec953/+MsPLGfbPb4AkvcBB9VIjOMk+4Hp1vl+920RzBLimjtXvJgBJeoAHwCbgkHq1iJLMK3vgFLCgMvxQ7a+onyvdYeAyMARsVb+X88mAcllEb4EN6kiSbcDNmmHfFE/5DtirDifpB54AC4Hz6sAEIMlS4DUwC1inPkuyG7gNzG5Rp2/ATnUwyXrgMVDOFquj4xkkOQ2cBG6oB5IsAl4B89tsgpL1SvVjknvALuCYeqEOeAqsBbaoQ0nOFUGbzuuyo+rFqhluAYPqjjqgFGpOKWIVxQiwbJqAR7Vn2pxkNfACeKOuqAMCfFELpDzZj8kN0CZoTO1NUhpiFHiv9k0FKMBpL9Ukc4FPtZp+VXuafslJOgY0RvUfApIsLx0w7QL8MugvE2CybeOwW1KbI8NF2CGgBLZRLR/e+GoEvARWdei8bvZcXTMVoKPu+aNzdCLwxgwelnHRZQb31e1NM+jScVPztn6ZSU4AZxo8HFfPtgqqXUDRlQm7p3J4Bxgok+GfAFo5+dt9Wxl0A/gJ9Zq9GZaPOsMAAAAASUVORK5CYII="/></div>
+                </div>
+                <div class="image2">
+                  <div class="overlay">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlsENwjAMRd+fAcahLMAOcIEJYAyYAC6wAwsA49AZjKgISluhJIVwSq6x/eyvyD8i81Hm+vQAZlYBS2AGjCIbqIEzsJd083NaADPbAuvIop/CdpI27vINMLMJcP2yuEufSmpq+YAjMP8R4CRp0QXcEzQP9VFLGncBFspKuZfUqONLVAAtBYtEwQdVJBokUfZVkX3ZPY3mEpw9LqByxvM/w3GNvYxnNdAyD85oeo4WN3l6VPZfxQNdf14ZDoKYWAAAAABJRU5ErkJggg=="/>
+                  </div>
+                </div>
+                <div class="image3">
+                    <div class="overlay">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXxJREFUSEvVlL8rhWEUxz9fI2Gw65YMJAb7tYqSTZRB3YkyKBZWBouEkeFKumbxB1hIkTIYTBImwy2DH3Xcp95bt/t63+e5b93BM76dcz7vOed7vqLJT02uTxDAzOyvH5HkzfcGuMJNB4SM0cxWgKKkt9p4bwdm1g1MA2PAUJR8C5wBx5KezWwe2AMegbyk1yokEWBmHcAhMJHSgdvNCbAKnAO9QEHSfirAzNqAS2AgZDzAFTAFTEra9o7IzIrAbH3xqmoSlr4laSmWU//BzPqBe4hL2AP4AnK183e1Yzsws11gIU33SbJ1u5C0kToiM3NK6MkIuJCU9wE+gNaMgHdJXT5AGWgPVE99WFlSpw9wBwxmBNxIGvYBNoHljIB1SWs+gLvGB6ClQciPE4ekp5BDOwDmGgTsSFr0Hlpkz84qroG+QIizihFJn0GACOLUcFQBjXvMrhQZnJN37IXYdQ6YqZjfaGTX34BT2mmlw5Kkl7QuvYDAESWG/X/ALwKBhRkuq9lXAAAAAElFTkSuQmCC"/>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+        <footer>
+            <div class="container footer">
+
+                <div class="firstSection">
+                    <span class="first">
+                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEtjZKAxYKSx+QwoFrysMakXbznTiMvSF7UmaSA5ieYzs3CpQTcDxYIXNab/Gf8zlIq3nu5BN+BFtbkFA+O/Q2Dx/0x2Eq0nT6CreVltWvKfkaFbouU03FwMC0Ca0C150WAlxvDn92UGBgYxqKGvGFhYdSUajr2CWQIzHOxDQhYgW/I/zZj1pRgTyOUWaC4+If7qnx3jrLO/kQ0n2gKYJf8ZGVUYGP6nYw9zxpmM///fAQULsjxRPqAkdY1aQDD0RoNoEAcRQaeRoYC+xTWoNCXDkRhaBjCZ1ppeZfjPoEWRLxgZrkk0n9aGmYESB89rTEIY/zO1MzD+VyHHEkYGhpv/GP7XSLacWYPVAnIMJaSHvqmIkGvIkQcAa9+KGTxm0zAAAAAASUVORK5CYII="/>
+                             <span>Luxe</span>
+                    </span>
+                    <span class="parag">
+                         crafting timeless pieces for the <br> discerning collector
+                    </span>
+                    
+                </div>
+                <div class="secondSection">
+                    <span class="secondSection1">collections</span>
+                    <ul>
+                        <li><a href="">Rings</a></li>
+                        <li><a href="">Neklaces</a></a></li>
+                        <li><a href="">Watches</a></li>
+                        <li><a href="">Limited Edtion</a></li>
+                    </ul>
+                </div>
+                <div class="threesection">
+                     <span class="secondSection2">company</span>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Press</a></li>
+                    </ul>
+                </div>
+                <div class="forsection">
+                    <span class="news">Newsletter</span>
+                     <span class="parag">
+                         crafting timeless pieces for the <br> discerning collector
+                    </span>
+                    <div class="recherche">
+                        <input type="text" name="searche" placeholder="Enter your mail" id="rechercher">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                  
+
+            </div>
+
+        </footer>
+</body>
+</html>
