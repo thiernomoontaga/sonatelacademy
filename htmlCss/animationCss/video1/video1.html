@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation1</title>
+   
+</head>
+<body>
+      <style>
+            body{
+                display: flex;
+                background-color: black;
+            }
+            .espace-deplacement{
+                width: 700px;
+                height: 60px;
+                background-color: rgb(80, 76, 76);
+                margin-top: 70px;
+                margin-left: 500px;
+                border-radius: 30px;
+                display: flex;
+            }
+
+                
+            
+            .boule{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: orangered;
+            }
+            .espace-deplacement:hover 
+            .boule
+            {
+                margin-left: 400px;
+                transition: margin-left 600ms ease-in-out;
+            }
+      </style>
+      <div class="espace-deplacement">
+            <div class="boule"></div>
+      </div>
+   
+    
+</body>
+</html>
