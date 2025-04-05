@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(27, 24, 24);
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+        .carre{
+            height: 70px;
+            width: 70px;
+            rotate: 45deg;
+     
+        }
+        .carre__jaune{
+            background-color: rgb(233, 233, 88);
+            animation: anime___carre--jaune 1s infinite ;
+
+
+        }
+        .carre__red{
+            background-color: rgb(173, 27, 27);
+            animation: anime___carre--red 1s infinite ;
+
+        }
+        .carre__blue{
+            background-color: rgb(40, 40, 179);
+            position: absolute;
+            right: 29%;
+            animation: anime___carre--blue 1s infinite ;
+
+           
+        }
+        .carre__green{
+            background-color: rgb(29, 107, 29);
+            position: absolute;
+            left: 29%;     
+            animation: anime___carre--green 1s infinite ;
+             
+        }
+        .carre__column{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }       
+
+        @keyframes anime___carre--green{
+           0%{
+             transform: translateY(50px) rotate(0.3turn);
+           }
+        }
+        @keyframes anime___carre--jaune{
+           0%{
+             transform: translateY(50px) rotate(0.3turn);
+           }
+        }
+        @keyframes anime___carre--red{
+           0%{
+             transform: translateY(50px) rotate(0.3turn);
+           }
+        }
+        @keyframes anime___carre--blue{
+           0%{
+             transform: translateY(50px) rotate(0.3turn);
+           }
+        }
+     
+    </style>
+        <div class="container">
+         <div class="carre carre__green"></div>
+         <div class="carre__column">
+            <div class="carre carre__jaune"></div>
+            <div class="carre carre__red"></div>
+         </div>
+         <div class="carre carre__blue"></div>
+
+            
+        </div>
+       
+</body>
+</html>

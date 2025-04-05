@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body{
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            
+            height: 100px;
+            width:  100px;
+            border-radius: 50%;
+            background: url('/htmlCss/animationCss/transitions/ballbascket.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-left: 300px;
+            margin-top: 200px;
+            animation-name: bonder_ballon;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+            
+        }
+        @keyframes bonder_ballon{
+            from {transform: 0;}
+            to {transform: translateY(600px);}
+        }
+    </style>
+    <div class="container">
+        
+    </div>
+</body>
+</html>

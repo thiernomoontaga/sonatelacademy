@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pockeball</title>
+</head>
+<body>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .ball{
+            height: 600px;
+            width: 600px;
+            border: 7px solid;
+            border-radius: 50%;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            background: gray;
+            
+        }
+
+        .partie-rouge{
+            height: 300px;
+            width: 100%;
+            background-color: brown;
+            /* border-radius: 50%; */
+            border: 5px solid;
+            display: flex;
+            position: relative;
+            /* flex-direction: row; */
+
+        }
+        .cercle-blanc{
+            height: 150px;
+            width: 140px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 20%;
+            left: 11%;
+        }
+        .ceinture{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(50, 43, 53);
+            border: 4px solid;
+            position: absolute;
+            top: 50%;
+
+        }
+
+    </style>
+    <div class="ball">
+        <div class="partie-rouge">
+            <div class="cercle-blanc"></div>
+        </div>
+        <div class="ceinture"></div>
+        <div></div>
+    </div>
+
+    
+</body>
+</html>
