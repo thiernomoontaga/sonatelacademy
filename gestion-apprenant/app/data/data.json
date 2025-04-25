@@ -1,0 +1,45 @@
+{
+    "apprenants":[ 
+        {
+            "nom":"segnane",
+            "prenom":"thierno",
+            "matricule":"t2017",
+            "adress_mail":"thiernosegnane316@gmail.com",
+            "login":"777732762",
+            "password":"passer"
+        },
+        
+        {
+            "nom":"Diallo",
+            "prenom":"Abdourahamane",
+            "matricule":"e2015",
+            "adress_mail":"diallo.abadourahamane@gmail.com",
+            "login":"773470427",
+            "password":"passer"
+        },
+        {
+            "nom":"Diassy",
+            "prenom":"Bakary",
+            "matricule":"k2019",
+            "adress_mail":"Diassy.bakary@gmail.com",
+            "login":"777940388",
+            "password":"passer"
+        },
+         {
+            "nom":"Marena",
+            "prenom":"Gorgui",
+            "matricule":"b2007",
+            "adress_mail":"marena.gorgui@gmail.com",
+            "login":"779540383",
+            "password":"passer"
+        },
+        {
+            "nom":"Doly",
+            "prenom":"Bara",
+            "matricule":"c2057",
+            "adress_mail":"Doly.bara@gmail.com",
+            "login":"776560686",
+            "password":"passer"
+        }
+   ]
+}
