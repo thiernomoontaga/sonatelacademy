@@ -1,18 +1,51 @@
 <?php
-require_once __DIR__.'/../views/login.php';
 require_once __DIR__.'/../controllers/controller.php';
-
-$erreur = NULL;
-if((!empty($_POST['login'])) && (!empty($_POST['password']))){
-    if(($_POST['login'] === 'thierno') && $_POST['password'] == '123'){
-        session_start();
-        $_SESSION['users'] = 1;
-        header('location:/dashbord.php');
+function authenticate_users():void{
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if(!empty($_POST['login']) && !empty($_POST['password'])){
+            if(check_id($_POST['login'],$_POST['password'])){
+                $_SESSION['user'] = true;
+                redirect_to_root('dashbord');
+            }
+         }
+        else{
+            $_SESSION['error'] = "login ou mot de pass pas valide ! ";
+            redirect_to_root('login');
+        }
     }
-    else {
-        $erreur = "identifiant non verifier";
-    }
+    require_once __DIR__.'/../views/login.php';
 }
+function check_id(string $login,string $password):bool{
+    return $login ==='thierno' && $password ==='123';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 

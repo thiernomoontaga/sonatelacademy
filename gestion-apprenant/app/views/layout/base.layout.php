@@ -48,7 +48,7 @@
             </div>
 
             <div class="deconnexion">
-                <button type="button"><i class='bx bx-log-out' style='color:#ff7900' ></i><span class="txt">Deconnexion</span></button>
+                <a href="index.php?page=login"><button type="button"><i class='bx bx-log-out' style='color:#ff7900' ></i><span class="txt">Deconnexion</span></button></a>
             </div>
             
         </div>
@@ -76,7 +76,7 @@
         </div>
     </header>
     <main>
-        <?php $content ?? '' ?>
+        <?= $content ?? '' ?>
     </main>
    </section>
     

@@ -1,15 +1,15 @@
 <?php
-    function is_connect():bool{
+require_once __DIR__.'/../services/session.service.php';
 
-    if(session_status() === PHP_SESSION_NONE){
-        session_start();
-    }
-    return (!empty($_SESSION['users']));
-   }
+function redirect_to_root($page):void{
+    header("location: index.php?page=$page");
+    exit();
+}
 
-   function redirect_to_page():void{
-    if(!is_connect()){
-        header('location:/login.php');
-        exit();
-    }
- }
+function render_view(string $view):void{
+    ob_start();
+    require dirname(__DIR__)."/views/$view.php";
+    $content = ob_get_clean();
+    require_once dirname(__DIR__)."/views/layout/base.layout.php";
+}
+

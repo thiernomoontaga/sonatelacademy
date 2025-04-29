@@ -13,6 +13,7 @@
         <p class="texte_noir">Bienvenu sur </p>
         <p class="texte_orange">Ecole du code Sonatel academy</p>
         <h1>Se connecter</h1>
+        
            <form action="/index.php?page=login" method="POST" class="formulaire"> 
                 <label for="login">login</label>
                 <input type="text" name="login" placeholder="matricule ou login">

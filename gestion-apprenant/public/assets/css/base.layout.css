@@ -58,7 +58,7 @@ section{
 } 
 
 .bx{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 1.5em;
 }
 
@@ -85,7 +85,7 @@ section{
 }
 
 .deconnexion{
-    margin-top: 15em;
+    margin-top: 20em;
     margin-left: 5em;
     border: none;
 }
@@ -108,7 +108,9 @@ button{
 button .bx{
     margin-right: 7px;
 }
-
+a{
+    text-decoration: none;
+}
 .txt{
     margin-right: 35px;
 }
@@ -120,10 +122,10 @@ header{
     justify-content: space-between;
 }
 main{
-    height: 86%;
+    height: 90%;
 }
 .recherche{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     margin-left: 50px;
     width: 500px;
@@ -142,9 +144,8 @@ main{
 }
 .recherche .bx{
     position: absolute;
-    top: 50%;
-    left: 4%;
-    margin-bottom: 5px;
+    top: 40%;
+    left: 6%;
 }
 
 .info_admin{
