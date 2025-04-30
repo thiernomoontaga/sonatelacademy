@@ -1,0 +1,92 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+#modal-toggle:checked ~ .modal-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    text-align: left;
+}
+.photo-box {
+    border: 2px dashed #ccc;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.photo-label {
+    cursor: pointer;
+    color: #ff6600;
+    font-size: 1.2rem;
+}
+
+.photo-preview {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Organisation des champs */
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.create-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 48%;
+}
+
+.cancel-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 48%;
+}
+

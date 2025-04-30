@@ -1,0 +1,88 @@
+{
+    "users": [
+        {
+            "nom": "Diop",
+            "prenom": "Awa",
+            "email": "awa.diop@example.com",
+            "login": "12345",
+            "role": "admin",
+            "telephone": "771234567",
+            "password": "bb",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "Fall",
+            "prenom": "Moussa",
+            "email": "moussa.fall@example.com",
+            "login": "11ODC-SENEGAL",
+            "role": "vigil",
+            "telephone": "770112233",
+            "password": "1234Passer",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "Ndoye",
+            "prenom": "Fatou",
+            "email": "fatou.ndoye@example.com",
+            "login": "12ODC-SENEGAL",
+            "role": "apprenant",
+            "telephone": "778899001",
+            "password": "1234Passer",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "Ba",
+            "prenom": "Ibrahima",
+            "email": "ibrahima.ba@example.com",
+            "login": "13ODC-SENEGAL",
+            "role": "apprenant",
+            "telephone": "775566778",
+            "password": "ttttt",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "Gueye",
+            "prenom": "Khady",
+            "email": "khady.gueye@example.com",
+            "login": "14ODC-SENEGAL",
+            "role": "vigil",
+            "telephone": "776655443",
+            "password": "1234Passer",
+            "image": "assets\/images\/a.png"
+        }
+    ],
+    "promotions": [
+        {
+            "nom": "Promotion 2025",
+            "date_debut": "2025-02-04",
+            "date_fin": "2025-12-04",
+            "nombre_apprenants": 180,
+            "statu": "inactive",
+            "image": "assets\/images\/img.jpg"
+        },
+        {
+            "nom": "Promotion 2024",
+            "date_debut": "2024-01-10",
+            "date_fin": "2024-10-20",
+            "nombre_apprenants": 135,
+            "statu": "active",
+            "image": "assets\/images\/img.jpg"
+        },
+        {
+            "nom": "Promotion 2022",
+            "date_debut": "2024-01-10",
+            "date_fin": "2024-10-20",
+            "nombre_apprenants": 125,
+            "statu": "active",
+            "image": "assets\/images\/img.jpg"
+        },
+        {
+            "nom": "Promotion 2021",
+            "date_debut": "2024-01-10",
+            "date_fin": "2024-10-20",
+            "nombre_apprenants": 185,
+            "statu": "active",
+            "image": "assets\/images\/img.jpg"
+        }
+    ]
+}

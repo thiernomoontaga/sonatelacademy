@@ -1,0 +1,29 @@
+:root{
+    --couleur-blanc : #ffffff;
+    --couleur-orange : #ff7700;
+    --couleur-texte : #030303;
+    --couleur-texte-2 : #3d3939;
+    --couleur-texte-3 : #cccccc;
+    --couleur-vert-ment : #00938e;
+    --couleur-bordure : #dadada;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteneur-dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+h1{
+    color: var(--couleur-orange);
+    font-size: 4rem;
+}

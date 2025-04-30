@@ -141,6 +141,8 @@ main{
     border-radius: 35px;
     width: 90%;
     margin-left: 30px;
+    background-color: #f7f5f4;
+
 }
 .recherche .bx{
     position: absolute;

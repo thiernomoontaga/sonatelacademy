@@ -5,7 +5,7 @@
          render_view('dashbord');
       }
       else{
-         redirec_to_root('login');
+         redirect_to_root('login');
       }
    }
 
