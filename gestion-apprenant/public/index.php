@@ -7,5 +7,6 @@ error_reporting(E_ALL);
 
 require_once __DIR__.'/../app/route/route.web.php';
 
+//require_once __DIR__.'/../app/views/promotion.php';
 
 

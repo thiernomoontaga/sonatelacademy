@@ -110,3 +110,10 @@ button{
     margin-left: 140px;
     font-size: 20px;
 }
+
+.message_success{
+    color: green;
+    margin-left: 140px;
+    font-size: 20px;
+    margin-top: 10px;
+}

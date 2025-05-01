@@ -13,6 +13,12 @@
         <p class="texte_noir">Bienvenu sur </p>
         <p class="texte_orange">Ecole du code Sonatel academy</p>
         <h1>Se connecter</h1>
+            <?php if(isset($_SESSION['success'])) : ?>
+                <div class="message_success">
+                    <?= $_SESSION['success'] ?>
+                </div>
+            <?php unset($_SESSION['success']);?>
+            <?php endif ?>
            <?php if(isset($_SESSION['message'])) : ?>
                <div class="deconnexion">
                     <?= $_SESSION['message'] ?>

@@ -1,60 +1,56 @@
 {
-    "users":[ 
+    "users": [
         {
-            "nom":"segnane",
-            "prenom":"thierno",
-            "matricule":"t2017",
-            "adress_mail":"thiernosegnane316@gmail.com",
-            "login":"777732762",
-            "role":"apprenant",
-            "password":"passer"
-        },
-        
-        {
-            "nom":"Diallo",
-            "prenom":"Abdourahamane",
-            "matricule":"e2015",
-            "role":"apprenant",
-            "adress_mail":"diallo.abadourahamane@gmail.com",
-            "login":"773470427",
-            "password":"passer"
+            "nom": "segnane",
+            "prenom": "MODOU",
+            "matricule": "t2017",
+            "adress_mail": "thiernosegnane316@gmail.com",
+            "login": "777732762",
+            "role": "apprenant",
+            "password": "aa"
         },
         {
-            "nom":"Diassy",
-            "prenom":"Bakary",
-            "matricule":"k2019",
-            "role":"apprenant",
-            "adress_mail":"Diassy.bakary@gmail.com",
-            "login":"777940388",
-            "password":"passer"
-        },
-         {
-            "nom":"Marena",
-            "prenom":"Gorgui",
-            "matricule":"b2007",
-            "role":"apprenant",
-            "adress_mail":"marena.gorgui@gmail.com",
-            "login":"779540383",
-            "password":"passer"
+            "nom": "Diallo",
+            "prenom": "Abdourahamane",
+            "matricule": "e2015",
+            "role": "apprenant",
+            "adress_mail": "diallo.abadourahamane@gmail.com",
+            "login": "773470427",
+            "password": "gg"
         },
         {
-            "nom":"Doly",
-            "prenom":"Bara",
-            "matricule":"c2057",
-            "adress_mail":"Doly.bara@gmail.com",
-            "login":"776560686",
-            "role":"apprenant",
-            "password":"passer"
-        } ,
-  
+            "nom": "Diassy",
+            "prenom": "Bakary",
+            "matricule": "k2019",
+            "role": "apprenant",
+            "adress_mail": "Diassy.bakary@gmail.com",
+            "login": "777940388",
+            "password": "gg"
+        },
         {
-            "nom":"segnane",
-            "prenom":"Nazir",
-            "adress_mail":"nazir.segnane@gmail.com",
-            "role":"admin",
-            "login":"784503717",
-            "password":"passer"
+            "nom": "Marena",
+            "prenom": "Gorgui",
+            "matricule": "b2007",
+            "role": "apprenant",
+            "adress_mail": "marena.gorgui@gmail.com",
+            "login": "779540383",
+            "password": "gg"
+        },
+        {
+            "nom": "Doly",
+            "prenom": "Bara",
+            "matricule": "c2057",
+            "adress_mail": "Doly.bara@gmail.com",
+            "login": "776560686",
+            "role": "apprenant",
+            "password": "gg"
+        },
+        {
+            "nom": "diop",
+            "prenom": "Nazir",
+            "adress_mail": "nazir.segnane@gmail.com",
+            "login": "784503717",
+            "password": "ll"
         }
-        
     ]
 }

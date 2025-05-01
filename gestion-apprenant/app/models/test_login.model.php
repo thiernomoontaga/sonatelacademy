@@ -7,8 +7,7 @@ $is_in = function(string $login):bool{
     $users = $data['users'];
     foreach($users as $user){
         if(($user['login']) === $login){
-            $_SESSION['login'] = $user['login'];
-            $_SESSION['password'] = $user['password'];
+             $_SESSION['login'] = $user['login'];
             return true;
         }
     }

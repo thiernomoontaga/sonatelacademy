@@ -21,7 +21,6 @@ function authenticate_users():void{
 }
 
 
-var_dump($_SESSION);
 
 
 

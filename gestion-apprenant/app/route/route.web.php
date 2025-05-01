@@ -19,7 +19,6 @@ $action = match($page){
    default => fn() => redirect_to_root('login')
 };
 
-
 $action();
 
 

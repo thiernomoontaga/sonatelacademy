@@ -9,12 +9,7 @@
 <body>
     <div class="container_body">
         <div class="formulaire">
-            <?php if(isset($_SESSION['succes'])) : ?>
-                <div class="message_success">
-                    <?= $_SESSION['succes'] ?>
-                </div>
-            <?php unset($_SESSION['succes']);?>
-            <?php endif ?>
+            
             <?php if(isset($_SESSION['fail'])) : ?>
                 <div class="message_erreur">
                     <?= $_SESSION['fail'] ?> 
