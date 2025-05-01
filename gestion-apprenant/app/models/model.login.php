@@ -13,5 +13,5 @@ $check_user = function(string $login,string $password):bool{
 };
 
 
-//verifier l'existence des variables dans ce cas pour eviter des undefine 
+
 

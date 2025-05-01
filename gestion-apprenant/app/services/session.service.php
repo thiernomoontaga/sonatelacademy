@@ -7,4 +7,4 @@ function is_connect():bool{
     return !empty($_SESSION['user']);
 }
 
-is_connect(); 
+is_connect();

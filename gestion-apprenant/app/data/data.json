@@ -51,6 +51,7 @@
             "nom":"segnane",
             "prenom":"Nazir",
             "adress_mail":"nazir.segnane@gmail.com",
+            "role":"admin",
             "login":"784503717",
             "password":"passer"
         }

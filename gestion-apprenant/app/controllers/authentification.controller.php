@@ -6,6 +6,7 @@ function authenticate_users():void{
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         if(!empty($_POST['login']) && !empty($_POST['password'])){
             global $check_user;
+            
             if($check_user($_POST['login'],$_POST['password'])){
                 $_SESSION['user'] = 1;
                 redirect_to_root('dashbord');
@@ -20,7 +21,7 @@ function authenticate_users():void{
 }
 
 
-
+var_dump($_SESSION);
 
 
 

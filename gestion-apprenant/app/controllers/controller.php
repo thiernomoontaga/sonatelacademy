@@ -13,3 +13,5 @@ function render_view(string $view):void{
     require_once dirname(__DIR__)."/views/layout/base.layout.php";
 }
 
+
+

@@ -74,3 +74,5 @@
       case PASSWORD = 'password';
       case CONFIRM_PASSWORD = 'confirm_password';
     }
+
+    
