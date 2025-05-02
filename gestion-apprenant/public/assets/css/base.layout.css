@@ -76,7 +76,7 @@ section{
 }
 .tb p{
     font-size: 1.2em;
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 .tb:hover{
@@ -138,7 +138,7 @@ main{
 .recherche input{
     border: 1px solid rgb(228, 227, 227);
     padding: 20px;
-    border-radius: 35px;
+    border-radius: 15px;
     width: 90%;
     margin-left: 30px;
     background-color: #f7f5f4;
@@ -146,6 +146,7 @@ main{
 }
 .recherche .bx{
     position: absolute;
+    z-index: 1;
     top: 40%;
     left: 6%;
 }
@@ -179,3 +180,12 @@ main{
     width: 70px;
 }
 
+.tableau_menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.recherche input:focus{
+    outline: none;
+    border: none;
+}

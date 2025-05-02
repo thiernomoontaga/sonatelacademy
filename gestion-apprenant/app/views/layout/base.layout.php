@@ -18,34 +18,49 @@
             promo 2025
         </div>
         <div class="tableau_menu">
-            <div  class="tb tb1">
-               <i class='bx bxs-dashboard' style='color:#ff7900'  ></i>
-               <p>tableau de bord</p>
-            </div>
-             <div  class="tb tb2">
+            <a href="/index.php?page=dashbord">  
+                <div  class="tb tb1">
+                <i class='bx bxs-dashboard' style='color:#ff7900'></i>
+                <p>tableau de bord</p>
+                </div>
+            </a>
+            <a href="index.php?page=promo">
+               <div  class="tb tb2">
                <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
                <p>Promotions</p>
             </div>
-             <div  class="tb tb3">
+            </a>
+            <a href="h">
+                <div  class="tb tb3">
                 <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
                 <p>Referentiels</p>
             </div>
-             <div  class="tb tb4">
+            </a>
+            <a href="">
+               <div  class="tb tb4">
                <i class='bx bxs-user' style='color:#ff7900' ></i>
                <p>Apprenants</p>
-            </div>
-             <div  class="tb tb4">
-             <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
-             <p>Gestions des presences</p>
-            </div>
-            <div  class="tb tb5">
-              <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
-               <p>Kits & Laptop</p>
-            </div>
-            <div  class="tb tb5">
+               </div>
+            </a>
+            <a href="">
+                <div  class="tb tb4">
+                <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
+                <p>Gestions des presences</p>
+                </div>
+            </a>
+            <a href="">
+                <div  class="tb tb5">
+                <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
+                <p>Kits & Laptop</p>
+                </div>
+            </a>
+           <a href="">
+               <div  class="tb tb5">
                <i class='bx bx-list-check' style='color:#ff7900' ></i>
                <p>Rapports & stats</p>
-            </div>
+               </div>
+           </a>
+           
 
             <div class="deconnexion">
                 <a href="index.php?page=logout"><button type="button"><i class='bx bx-log-out' style='color:#ff7900' ></i><span class="txt">Deconnexion</span></button></a>
