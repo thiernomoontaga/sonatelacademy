@@ -1,12 +1,5 @@
 <?php
-require_once __DIR__.'/../controllers/controller.php';
-require_once __DIR__.'/../controllers/authentification.controller.php';
-require_once __DIR__.'/../controllers/dashbord.controller.php';
-require_once __DIR__.'/../controllers/verify_login.controller.php';
-require_once __DIR__.'/../controllers/test_login.controller.php';
-require_once __DIR__.'/../controllers/reset_login.controller.php';
-require_once __DIR__.'/../controllers/logout.controller.php';
-require_once __DIR__.'/../controllers/promotion.controller.php';
+require_once __DIR__.'/../controllers/all_controller.php';
 
 $page = $_GET['page'] ?? 'login';
 
@@ -18,6 +11,12 @@ $action = match($page){
    'logout' => fn() =>logout(),
    'reset'  => fn() => reset_password(),
    'promo' => fn() => display_promo(),
+   'liste_promo' => fn() => display_list_promo(),
+   'ajout_promo'=> fn() => display_form_ajout_promo(),
+   'ajout_referentiel' => fn() => ajout_referentiel(),
+   'tout_ref' => fn() => display_tout_ref(),
+   'creer_ref' => fn() => display_form_creer_ref(),
+   'referentiel' => fn() => display_page_referentiel(),
    default => fn() => redirect_to_root('login')
 };
 

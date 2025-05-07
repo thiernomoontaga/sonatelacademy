@@ -30,7 +30,7 @@
                <p>Promotions</p>
             </div>
             </a>
-            <a href="h">
+            <a href="/index.php?page=referentiel">
                 <div  class="tb tb3">
                 <i class='bx bxs-folder-minus' style='color:#ff7900' ></i>
                 <p>Referentiels</p>
@@ -63,7 +63,7 @@
            
 
             <div class="deconnexion">
-                <a href="index.php?page=logout"><button type="button"><i class='bx bx-log-out' style='color:#ff7900' ></i><span class="txt">Deconnexion</span></button></a>
+                <a href="index.php?page=logout"><button type="button" class="bouton_deconnexion"><i class='bx bx-log-out' style='color:#ff7900' ></i><span class="txt">Deconnexion</span></button></a>
             </div>
             
         </div>

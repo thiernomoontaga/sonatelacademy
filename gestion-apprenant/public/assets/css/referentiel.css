@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_promotion{
+    background-color: #ECF8F6;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+.container_grille{
+    height: 98%;
+    width: 96%;
+    background-color: #e2f6f3;
+
+}
+
+.menu_promotion{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu_promotion h1{
+    color: #0c9190;
+    font-size: 35px;
+    margin: 8px 0px 7px 35px;
+}
+.menu_promotion span{
+    font-size: 19px;
+    margin: 25px 0px 0px 35px;
+
+} 
+
+.bouton_ajout_promo{
+    width: 18%;
+    height: 50px;
+    background-color: #0c9190;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 84px 10px 0px 0px;
+    justify-content:  center;
+    align-items: center;
+    display: flex;
+}
+.bouton_ajout_promo a {
+    color: white;
+    text-decoration: none;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    gap: 25px;
+    height: 170px;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.box{
+    height: 120px;
+    background-color: #ff7900;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.box_icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+
+.nombre_apprenant{
+    margin-left: 40px;
+}
+.nombre_apprenant h1{
+    font-size: 45px;
+}
+
+.nombre_apprenant span{
+    font-size: 20px;
+}
+
+
+
+.barre_recherche_affichage{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.barre_recherche{
+    height: 90%;
+    width: 57%;
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border: 1px solid rgb(246, 244, 244);
+}
+
+.barre_recherche input{
+    height: 100%;
+    width: 95%;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.barre_recherche input:focus{
+    border: none;
+    outline: none;
+}
+
+.barre_recherche .bx{
+    position: absolute;
+    left: 18%;
+    top: 21.5%;
+}
+
+.menu_deroulant{
+    width: 18%;
+    background-color:#ff7900;
+    height: 100%;
+    border-radius: 12px;
+    margin-left: 30px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu_deroulant .bxs-book-alt{
+    margin-right: 10px;
+}
+
+
+.grille_ref{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px;
+    margin-top: 30px;
+    gap: 15px;
+    padding: 30px 30px;
+}
+
+.card_grille{
+    height: 350px;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.img_card{
+    height: 45%;
+    width: 95%;
+    background-color:wheat;
+    border-radius: 14px;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+.img_card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.card_grille h4{
+    color: #0c9190;
+    margin: 20px 0px 0px 10px;
+}
+
+.card_grille p{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(77, 75, 75);
+}
+
+.trait{
+    background-color: #0c9190;
+    height: 2px;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.boule_ref{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.boule{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid white;
+
+}
+.boule1{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(194, 189, 189);
+}
+
+.boule2{
+    position: absolute;
+    margin-left: 30px;
+    z-index: 2;
+    background-color: rgb(158, 157, 157);
+}
+.boule3{
+    position: absolute;
+    z-index: 3;
+    margin-left: 50px;
+    background-color:rgb(104, 101, 101);
+}
+
+.boule_ref  span{
+    margin-left: 100px;
+    margin-top: 10px;
+    color: #0c9190;
+}
+
+.card_grille .apprenant{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card_grille .module{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menu_deroulant a{
+    text-decoration: none;
+    color: white;
+}
