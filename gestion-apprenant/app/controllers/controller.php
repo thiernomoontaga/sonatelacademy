@@ -14,4 +14,8 @@ function render_view(string $view):void{
 }
 
 
+function save_photo():void{
+    
+}
+
 

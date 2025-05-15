@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="to-do.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="screen">
+        <form action="">
+            <div class="entete">
+                <div class="title">
+                    <label for="" >Title*: </label>
+                    <input type="text" id="title" class="champ_title"  placeholder=" title of task" name="title_task">
+                </div>
+                <div class="description">
+                    <label for="" class="des">Description*:</label>
+                    <textarea name="" id="description_task" cols="20" rows="5" id="" placeholder="description of task"></textarea>
+                </div> 
+                <button type="submit">+</button>
+
+            </div>
+        </form>
+        <div class="task_container" id="task_container">
+            <div class="header_container">
+                <input type="checkbox"> 
+                <h1>Toute les taches </h1>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="alltasks" id="alltasks">
+                    
+            </div>
+           
+
+        </div>
+    </div>
+
+<script src="to-do.js"></script>
+</body>
+</html>

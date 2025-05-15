@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sentence = "Le chat noir voit un autre chat noir. Le chat est rapide, très rapide, et le chien aussi est rapide. Mais le chat reste le plus malin des deux. Le chien aboie, le chat miaule, et le chat grimpe aux arbres."
+        const words = sentence
+        .toLowerCase()
+        .replace(/[.,;']/g,' ')
+        .split(' ')
+        .filter(word => word.length > 0)
+        let frequencies = {}
+        for(let word of words){
+            if(frequencies[word]){
+                frequencies[word]++
+            }
+            else {
+                frequencies[word] = 1 
+            }
+        }
+
+        console.log(frequencies)
+        
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

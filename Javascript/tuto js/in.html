@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function calculatrice(a, b, soustraction, somme) {
+    if (a > b) {
+        return soustraction(a, b);
+    } else {
+        return somme(a, b);
+    }
+}
+
+const somme = (x, y) => x + y;
+const soustraction = (w, z) => w - z;
+
+// Appel (avec a=10 > b=3 → soustraction)
+console.log(calculatrice(10, 3, soustraction, somme)); // Affiche 7 (10-3)
+
+// Appel (avec a=2 < b=5 → addition)
+console.log(calculatrice(2, 5, soustraction, somme)); // Affiche 7 (2+5)
+    </script>
+</body>
+</html>

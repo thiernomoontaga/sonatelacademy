@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const eleves = [
+            {
+                nom:'thierno',
+                notes:[13,4,7,10]
+            },
+             {
+                nom:'moussa',
+                notes:[18,10,16,11]
+            },
+             {
+                nom:'nazir',
+                notes:[20,14,18,17]
+            },
+             {
+                nom:'bakary',
+                notes:[13,17,16,15]
+            },
+             {
+                nom:'oumou',
+                notes:[10,10,10,10]
+            },
+             {
+                nom:'jeery',
+                notes:[13,12,18,11]
+            }
+    ]
+    const moyenne = (note) => {
+        let result = 0
+        for(let i of note){
+            result = result + i
+        }
+        moy = result / (note.length)
+        return moy
+    }
+
+    for(let eleve of eleves){
+        eleve.moyenne = moyenne(eleve.notes)
+        eleve.best_note = Math.max(...eleve.notes)
+        eleve.worst_note = Math.min(...eleve.notes)
+    }
+    const compare_moyenne_student = (a,b) => {
+        return b.moyenne - a.moyenne
+    }
+    eleves.sort(compare_moyenne_student)
+    const show_the_top_three = (tableau) => {
+        for(let i = 0; i < 3 ; i++){
+            console.log(`${tableau[i].nom} a pour moyenne ${tableau[i].moyenne}, sa pire note est ${tableau[i].worst_note} et sa pire note est ${tableau[i].best_note}`)
+        }
+    }
+    show_the_top_three(eleves)
+    
+
+   
+</script>
+    
+</body>
+</html>
+

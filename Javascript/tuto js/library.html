@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    class Bibliotheque{
+
+    }
+    class Livre{
+        
+        constructor(nom,nombre_de_page){
+            this.nom = nom
+            this.nombre_de_page = nombre_de_page
+        }
+        page(){
+
+            return this.nombre_de_page = 1
+        }
+        nextpage(){
+            this.nombre_de_page = 1
+            return this.nombre_de_page += 1 
+        }
+        close(){
+            return this.nombre_de_page = 1
+        }
+    }
+
+ const livre1 = new Livre('madame Bovary', 345)
+  
+ console.log(livre1.nextpage())
+ console.log(livre1.close())
+
+</script>
+<body>
+    
+</body>
+</html>
