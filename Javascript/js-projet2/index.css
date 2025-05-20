@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e7e6;
+}
+
+.screen{
+  width: 900px;
+  height: 95%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input_field{
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.input_field input{
+  width: 90%;
+  border: none;
+  font-size: 20px;
+  border-radius: 15px  0px 0px 15px;
+  border: 1px solid rgba(62, 62, 65, 0.2);
+
+}
+input:focus{
+  outline: none;
+}
+
+button{
+  width: 10%;
+  cursor: pointer;
+  border-radius:   0px 15px 15px 0px  ;
+  border: none;
+
+}
+
+.search{
+  width: 40%;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid rgba(128, 126, 126, 0.2);
+  margin-top: 10px;
+  font-size: 20px;
+}
+.screen_card{
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: auto;
+  border: 1px solid rgba(128, 126, 126, 0.2);
+}
+
+
+.card{
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgba(216, 216, 219, 0.2);
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.title{
+  padding: 20px;
+  display: flex;
+}
+
+.description{
+  height: 125px;
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+}
+.score{
+  background-color: rgba(92, 92, 94, 0.2);
+  width: 95%;
+  height: 40px;
+  margin-bottom: 10px;
+  margin: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.error{
+  color: red;
+  font-size: 20px;
+}
+
