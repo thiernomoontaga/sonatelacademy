@@ -15,7 +15,10 @@ let elements = [];
 let currentElement = {};
 let retrieve_description = false;
 let btn_add, input_add, screen_card;
-
+/**
+ * @param 
+ * @returns
+ */
 function retrieve_user_data() {
   btn_add.addEventListener('click', () => {
     const submitted_value = input_add.value.trim();

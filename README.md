@@ -16,8 +16,8 @@ La formation Fullstack Web Mobile de la **Sonatel Academy** permet d'acquérir d
 Voici une liste des projets que j'ai développés durant la formation :
 
 ### 1 **Gestion de plateforme de cours en ligne** 🎓
-> Le premier projet réalisé, une plateforme développée en C pour maîtriser les bases du langage et le modèle MVC.
-- **Technologies** : Langage C, modèle MVC
+> Le premier projet réalisé, une plateforme développée en C pour maîtriser les bases du langage .
+- **Technologies** : Langage C
 - **Fonctionnalités** : Inscription des étudiants, gestion des cours et des enseignants
 
 ### 2 **HTML & CSS** 🎓

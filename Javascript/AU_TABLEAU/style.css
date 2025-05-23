@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 2rem;
+    background-color: #f4f4f4;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container .header{
+    display: flex;
+    
+}
+
+.container .header .input{
+    flex: 1;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.container .header .input:focus,
+.container .header .save:focus{
+    outline: none;
+}
+.container .header .save{
+    padding: 5px 20px;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+    cursor: pointer;
+}
+
+.container .body .card{
+    margin-top: 40px;
+    background-color: rgb(247, 242, 242);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .body .card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.container .body .card .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+
+.container .body .card .content{
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+.container .body .card .header .actions{
+    display: flex;
+    gap: 4px;
+}
+
+.container .body .card .header .actions .action-btn{
+    width: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+
+}
+
+.container .body .card .footer{
+    
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 10px;  
+    display: flex;
+    justify-content: end; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+}
+
+.container .search input{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+input{
+    text-align: center;
+}
