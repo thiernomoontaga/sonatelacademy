@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projet chat ...</title>
+  </head>
+  <body class="w-full h-screen bg-[#fefefe] flex items-center justify-center">
+    <div class="w-[90%] h-[90%] shadow-lg shadow-gray-500 rounded-[1rem] flex">
+      
+      <!-- SideBare -->
+      <div class="sideBar bg-[#f0efe8] w-[6rem] rounded-tl-[1rem] rounded-bl-[1rem] flex flex-col justify-center items-center gap-5 p-2">
+          <i class="fa-solid fa-message text-center border-2 border-[#dba230] p-2 rounded-[8px] w-full cursor-pointer hover:bg-[#dba230]"><br><small class="text-[8px]">messages</small></i>
+          <i class="fa-solid fa-user-group text-center border-2 border-[#dba230] p-2 rounded-[8px] w-full cursor-pointer hover:bg-[#dba230]"><br><small class="text-[8px]">Groupes</small></i>
+          <i class="fa-solid fa-arrows-turn-to-dots text-center border-2 border-[#dba230] p-2 rounded-[8px] cursor-pointer w-full hover:bg-[#dba230]"><br><small class="text-[8px]">Diffusions</small></i>
+          <i class="fa-solid fa-box-archive text-center border-2 border-[#dba230] p-2 rounded-[8px] cursor-pointer w-full hover:bg-[#dba230]"><br><small class="text-[8px]">Archives</small></i>
+          <i class="fa-solid fa-plus text-center border-2 border-[#dba230] p-2 rounded-[8px] w-full cursor-pointer hover:bg-[#dba230]"><br><small class="text-[8px]">Nouveau</small></i>
+      </div>
+      
+      <!-- discutions -->
+      <div class="bg-[#f9f7f5] w-1/4 p-3 flex flex-col gap-3">
+          <p class="text-xl">Discussions</p>
+          <input type="text" name="" id="" placeholder="Rechercher ..." class="rounded-md pl-3 outline-[#dba230]">
+
+          <!-- Section pour ajouter un contact. page1-->
+          <div class="page hidden flex-col items-center gap-3 p-5 pt-10 border-[3px] border-[#dba230] rounded-md mt-20 " id="page4">
+            <p>Ajouter un contact.</p>
+            <div class="w-full">
+              <label for="nom">Nom :</label> <br>
+              <input type="text" id="nom" class="w-full rounded-md pl-3 outline-orange-400">
+            </div>
+            <div class="w-full">
+              <label for="nom">Numéro :</label> <br>
+              <input type="text" id="numero" class="w-full rounded-md pl-3 outline-orange-400" >
+            </div>
+            <button type="button" class="bg-[#dba230] w-full text-white font-bold rounded-md hover:bg-[#e6be70] mt-5" id="ajouterUser">Ajouter</button>
+          </div>
+
+          <!-- Section pour afficher les contact -->
+           <div class="page hidden" id="page2">
+              <ul class="flex flex-col gap-3" id="ul">
+                <li class="flex justify-between border-r-[2px] border-b-[2px] border-[#dba230] p-1 rounded-lg text-gray-500"><span>Toto</span><span><input type="checkbox"></span></li>
+                <li class="flex justify-between border-r-[2px] border-b-[2px] border-[#dba230] p-1 rounded-lg text-gray-500"><span>Bakary</span><span><input type="checkbox"></span></li>
+              </ul>
+           </div>
+
+           <!-- Section archive contact -->
+           <div class="page hidden" id="page6">
+              <ul class="flex flex-col gap-3" id="ul">
+                <li class="flex justify-between border-r-[2px] border-b-[2px] border-[#dba230] p-1 rounded-lg text-gray-500"><span>Toto</span><span><input type="checkbox"></span></li>
+                <li class="flex justify-between border-r-[2px] border-b-[2px] border-[#dba230] p-1 rounded-lg text-gray-500"><span>Bakary</span><span><input type="checkbox"></span></li>
+              </ul>
+           </div>
+          
+           <!-- Section groupes whatsApp -->
+
+           <div class="page hidden flex-col mt-3 " id="page3">
+              <button class="w-full bg-[#dba230] mb-4 rounded-[10px] text-white hover:bg-[#e9ca8d] font-bold" id="ajouterGroupe">Creer un Groupe</button>
+              <div class="groupes">
+                  <div class="flex items-center justify-between mb-4 hover:bg-gray-300 p-2 rounded-[8px]">
+                      <div class="flex gap-2">
+                        <img src="./back.jpg" alt="groupe" class="w-12 h-12 rounded-[50%]">
+                        <div>
+                          <span>Fifa</span> <br>
+                          <small>Leep nice</small>
+                        </div>
+                      </div>
+                      <div class="flex flex-col items-center text-gray-500">
+                        <small>12:23</small>
+                        <small><i class="fa-solid fa-check-double text-gray-500"></i></small>
+                      </div>
+                  </div>
+                </div>
+           </div>
+
+           <!-- Section ajouter groupe whatsApp -->
+            <div id="form-groupe" class="page hidden max-w-md mx-auto p-4  rounded-lg shadow-md border-[3px] border-[#dba230]">
+                <h2 class="text-xl font-semibold mb-4 text-center" id="add-groupe">Ajouter un groupe</h2>
+
+                <div class="mb-3">
+                  <label for="nomGroupe" class="block mb-1 text-gray-600">Nom du groupe</label>
+                  <input type="text" id="nomGroupe" class="w-full border border-gray-300 rounded px-3 py-2 outline-none" placeholder="Ex: Projet Santé">
+                </div>
+
+                <div class="mb-3">
+                  <label for="membresGroupe" class="block mb-1 text-gray-600">Description du groupe : </label>
+                  <input type="text" id="membresGroupe" class="w-full border border-gray-300 rounded px-3 py-2 outline-none" placeholder="Ex : Groupe des dev.">
+                </div>
+
+                <div class="mb-3">
+                    <h2 class="font-bold">Choisissez vos amis.</h2>
+                    <ul id="membres">
+                      <li class="flex justify-between"><span>Bakary</span><span><input type="checkbox"></span></li>     
+                      <li class="flex justify-between"><span>Bakary</span><span><input type="checkbox"></span></li>   
+                    </ul>
+                </div>
+                <button class="w-full bg-[#dba230] text-white py-2 rounded hover:bg-orange-500" id="ajout_groupe">Ajouter</button>
+          </div>
+
+      </div>
+
+
+
+      <!-- messages -->
+      <div class="flex flex-col bg-[#efe7d7] flex-1 rounded-tr-[1rem] rounded-br-[1rem]">
+        <div class="flex justify-between p-3 items-center w-full border-b-[1px] border-white pb-2">
+          <img src="" alt="" class="w-10 h-10 rounded-[50%]">
+          <div class="flex gap-2" id="allBtn">
+            <i class="fa-solid fa-delete-left text-orange-400 border-[1px] border-orange-400 p-2 rounded-[50%] cursor-pointer hover:bg-[#dba230]"></i>
+            <i class="fa-solid fa-box-archive  text-gray-500 border-[1px] border-gray-500 p-2 rounded-[50%] cursor-pointer hover:bg-[#dba230]"></i>
+            <i class="fa-solid fa-square text-black border-[1px] border-black p-2 rounded-[50%] cursor-pointer hover:bg-[#dba230]"></i>
+            <i class="fa-solid fa-trash text-red-500 border-[1px] border-red-500 p-2 rounded-[50%] cursor-pointer hover:bg-[#dba230]"></i>
+          </div>
+        </div>
+        <div class="flex-1 w-full">
+          bonjour
+        </div>
+        <div class="w-full h-[4rem] bg-white flex p-3 items-center gap-4">
+            <input type="text" class="bg-gray-100 flex-1 rounded-[8px] p-2 outline-orange-400">
+            <i class="fa-solid fa-arrow-right p-3 border-[1px] border-green-500 text-white bg-green-500 rounded-[50%] hover:bg-green-300 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
