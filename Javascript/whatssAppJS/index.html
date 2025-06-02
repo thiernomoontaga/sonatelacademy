@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone whatssApp</title>
+  </head>
+  <body>
+    <div id="app" class="bg-slate-100 h-screen w-[100%] flex justify-center items-center ">
+      <div class="flex flex-row bg-gray-200 w-[92%] h-[92%]  rounded-3xl shadow-2xl">
+
+        <div class=" h-full w-[7%] bg-[rgba(249,247,245,255)] ">
+          <div class="flex py-40  flex-col items-center gap-3 ">
+            
+              <button id="message" class="flex flex-col items-center  border-[#d8b570] border-2 p-2 rounded-xl hover:bg-[#d8b570]">
+                <i class="fa-solid fa-message text-xl"></i>
+                <span>message</span>
+              </button>
+              <button id="groups" class="flex flex-col items-center  border-[#d8b570] border-2 p-2 rounded-xl hover:bg-[#d8b570]" id="groupe">
+                <i class="fa-solid fa-users text-xl"></i>
+                <span>Groupes</span>
+              </button>
+              <button id="share" class="flex flex-col items-center  border-[#d8b570] border-2 p-2 rounded-xl hover:bg-[#d8b570]">
+                <i class="fa-solid fa-arrows-turn-to-dots text-xl"></i>
+                <span>Diffusion</span>
+              </button>
+              <button id="archives" class="flex flex-col items-center  border-[#d8b570] border-2 p-2 rounded-xl hover:bg-[#d8b570]">
+                <i class="fa-solid fa-box-archive text-xl"></i>
+                <span>Archives</span>
+              </button>
+              <button class="flex flex-col items-center border-[#d8b570] border-2  p-2 rounded-xl hover:bg-[#d8b570] id" id="new_contact">
+                <i class="fa-solid fa-plus text-xl "></i>
+                <span>Nouveau</span>
+              </button>
+           </div>
+        </div>
+        <div class="w-[25%] bg-gray-100 h-full" >
+              <p class="text-2xl m-2 font-bold ml-3" id="title">Discussions </p>
+              <input type="text" name="" id="" class="p-2 w-[95%] m-2 rounded-xl outline-none" placeholder="Recherche">
+              <!--template for user-->
+              <div id="main" class="w-[100%] bg-gray-100 flex flex-col">
+
+              </div>
+                <template id="user">
+                  <div class="h-17 w-[100%] bg-[rgba(249,247,245,255)] shadow-slate-300 flex flex-row p-4">
+                    <div class="h-12 w-12 bg-black rounded-full flex text-center justify-center items-center text-white">
+                      N D
+                    </div>
+                    <div class="ml-5 flex flex-col">
+                        <span class="font-bold">Nazir</span>
+                        <span class="">boy naka waar gayn </span>
+                    </div>
+                  </div>
+                  <div class="h-17 w-[100%] bg-[rgba(249,247,245,255)] shadow-slate-300 flex flex-row p-4 ">
+                    <div class="h-12 w-12 bg-black rounded-full flex text-center justify-center items-center text-white">
+                      B D
+                    </div>
+                    <div class="ml-5 flex flex-col">
+                        <span class="font-bold">Barra Diop</span>
+                        <span class="">Katior ! </span>
+                    </div>
+                  </div>
+                  <div class="h-17 w-[100%] bg-[rgba(249,247,245,255)] shadow-slate-300 flex flex-row p-4">
+                    <div class="h-12 w-12 bg-black rounded-full flex text-center justify-center items-center text-white">
+                      T H
+                    </div>
+                    <div class="ml-5 flex flex-col">
+                        <span class="font-bold">Thierno</span>
+                        <span class=""> si lo nekk ??</span>
+                    </div>
+                  </div>
+                </template>
+             
+            <!-- template to add a contact -->
+              <template id="add-contact">
+                <form action="" class="flex flex-col">
+                  <h1 class="text-2xl font-bold m-4"> Ajouter un contact</h1>
+                  <input type="text" class="w-[95%] p-3 rounded-2xl outline-none m-2" id="nameUser" placeholder=" Ajouter un nom de contact" >
+  
+                  <input type="text" class="w-[95%] p-3 rounded-2xl outline-none m-2" id="numberUser" placeholder=" Ajouter un numero de telephone ">
+  
+                  <button id="button_add_contact"  type="submit"  class="bg-green-700 text-white w-[90%] m-4 p-2 rounded-xl font-bold"> Enregister</button>
+                  <button type="reset"  class="text-red-700 font-bold"> Annuler </button>
+                </form>
+              </template>
+              <!--default display group-->
+              <template id="my_groups">
+                <button class="w-[80%] p-4 bg-black ml-10 mt-4 text-white font-bold rounded-2xl mb-4"  id="add_groupe">Ajouter un groupe</button>
+                
+                <div class="h-17 w-[100%] bg-[rgba(249,247,245,255)] shadow-slate-300 flex flex-row p-4">
+                  <div class="h-12 w-12 bg-black rounded-full flex justify-center items-center text-white">M B</div>
+                  <div class="ml-5 flex flex-col">
+                      <span class="font-bold">MAFIA BI</span>
+                      <span class="">dernier message </span>
+                  </div>
+                  <div class="ml-[110px] mt-1">
+                    <span> 17h:30 </span>
+                    <span></span>
+                  </div>
+                </div>
+              </template>
+            <!-- template form add groupe -->
+            <template id="form_add_groupe">
+              <form class="flex flex-col">
+                <h1 class="text-2xl font-bold m-4">Ajouter un groupe</h1>
+                <input type="text" 
+                       class="w-[95%] p-3 rounded-2xl outline-none m-2" 
+                       id="groupName" 
+                       placeholder="Ajouter un nom de groupe"
+                       required>
+            
+                <input type="text" 
+                       class="w-[95%] p-3 rounded-2xl outline-none m-2" 
+                       id="groupDescription" 
+                       placeholder="Ajouter la description du groupe">
+            
+                <div class="max-h-40 overflow-y-auto border rounded-lg m-2 p-2">
+                  <h3 class="font-bold mb-2">Sélectionnez les membres :</h3>
+                  <div id="contactsSelection">
+                  </div>
+                </div>
+            
+                <button type="submit" class="bg-green-700 text-white w-[90%] m-4 p-2 rounded-xl font-bold">
+                  Enregistrer
+                </button>
+                <button type="button" class="text-red-700 font-bold" id="cancelGroup">
+                  Annuler
+                </button>
+              </form>
+            </template>
+              
+            
+             
+              
+             
+           
+        </div>
+          <div class="flex w-[68%] bg-[rgba(239,231,215,255)] h-full flex-col">
+                <div class="flex h-[90%] ">
+                  <div class="h-[70px] w-[100%] border-b-2 border-[#faefef] flex ">
+                    <div class="h-12 w-12 rounded-[100%] bg-slate-500 mt-1"></div>
+                      <div class="ml-2 mt-3 text-xl">Conversation</div>
+                      <div class=" p-4 border-b flex justify-between items-center ml-[750px]">
+                        <div class="text-xl font-semibold"></div>
+                          <div class="flex space-x-4">
+                              <button class="w-10 h-10 flex items-center justify-center border-2 border-yellow-700 rounded-full ">
+                                <i class="fa-solid fa-delete-left text-orange-700"></i>
+                              </button>
+                                <button class="w-10 h-10 flex items-center justify-center border-2 border-gray-500 rounded-full " id="archive">
+                                    <i class="fas fa-archive text-gray-500"></i>
+                                </button>
+                                <button class="w-10 h-10 flex items-center justify-center 2xl:border-black border-2 rounded-full ">
+                                  <i class="fas fa-square text-black-800"></i>
+                                </button>
+                                <button class="w-10 h-10 flex items-center justify-center border-red-500 border-2 rounded-full " id="
+                                delete">
+                                  <i class="fa-solid fa-trash text-red-500"></i>
+                                </button>
+                          </div>
+                      </div>
+      
+                    </div>
+                </div>
+                <div class="w-full bg-[#242323] flex flex-col h-auto">
+
+                </div>
+                
+                <div class="w-full h-[10%] bg-gray-100 flex flex-row py-5 ">
+                    <input type="text" name="" id="" class="outline-none w-[95%] bg-gray-300 rounded-xl" placeholder="    type a message...">
+                    <div class="bg-green-700 h-12 w-12 rounded-full ml-1 flex justify-center items-center"><i class="fa-solid fa-arrow-right text-white"></i></div>
+                </div>
+           </div>
+
+ 
+      </div>
+     
+    </div>
+
+    <script type="module" src="/src/components.js"></script>
+  </body>
+</html>
+
+ 
