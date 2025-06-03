@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Clone</title>
+  </head>
+  <body>
+    <script type="module">
+      const user = localStorage.getItem('username');
+      if (user) {
+        window.location.href = '/src/pages/chat.html';
+      } else {
+        window.location.href = '/src/pages/login.html';
+      }
+    </script>
+  </body>
+</html>
+   
+<script>
+
+    localStorage.setItem('todos',JSON.stringify(new todos))
+    const todosInlocalstorage =   localStorage.getItem('todos')?.toString()
+    if(todosInlocalstorage){
+      todos = JSON.parse(todosInlocalstorage)
+    }
+
+</script>
+
