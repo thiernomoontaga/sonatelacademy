@@ -1,16 +1,22 @@
 import {loginView} from './views/loginView'
-import {chatView} from './views/loginView'
-
+import {homePage} from './views/chatView'
+import {loginController} from './components/LoginForm'
 const routes = {
-  "#/login": loginView,
-  "#/chat":chatView
+  "#/login":loginView,
+  "#/chat":homePage
 }
-
-const router = function(){
-  const app = document.querySelector('.app')
+export function router(){
+  const app = document.querySelector('#body-app')
   app.innerHTML = ''
   const view = routes[window.location.hash] || loginView
-  app.appendChild(view)
+  app.appendChild(view())
+  if (window.location.hash === "#/login" || !window.location.hash){
+    loginController();
+  }
 } 
+export function navigateTo(hash){
+  window.location.hash = hash
+}
+
 
 
