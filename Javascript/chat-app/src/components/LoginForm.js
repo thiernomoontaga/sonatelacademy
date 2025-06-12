@@ -10,41 +10,6 @@ export  function loginController(){
       e.preventDefault()
       const formData = e.currentTarget
       const data = new FormData(formData)
-<<<<<<< HEAD
-      const Number = data.get('number')
-      const inputNumber = document.querySelector('#number')
-      const inputPassword = document.querySelector('#password')
-      const Password = data.get('password')
-      const regex = /^(\+221)?[ -]?(7[05678])[ -]?[0-9]{3}[ -]?[0-9]{2}[ -]?[0-9]{2}$/
-      const errorNumber = document.createElement('small')
-      const errorPassword = document.createElement('small')
-      const errorNumberExist = document.querySelector('#error-number')
-      const errorPasswordExit = document.querySelector('#error-password')
-      if(errorNumberExist){
-        errorNumberExist.remove()
-      }
-      if(errorPasswordExit){
-        errorPasswordExit.remove()
-      }
-      if(Number === '' || !regex.test(Number) ){
-         errorNumber.className = 'text-red-700 text-xl ml-2 mt-2'
-         errorNumber.textContent = 'empty field or invalid number !'
-         errorNumber.setAttribute('id','error-number')
-         inputNumber.insertAdjacentElement('afterend',errorNumber)
-
-      }
-      if(Password === '' || Password !== '123'){
-         errorPassword.className = 'text-red-700 text-xl ml-2 mt-2'
-         errorPassword.textContent = 'empty field or invalid password'
-         errorPassword.setAttribute('id','error-password')
-         inputPassword.insertAdjacentElement('afterend',errorPassword)
-      }
-      if(regex.test(Number) && Password === '123'){
-        navigateTo('#/chat')
-      }
-     
-    })
-=======
       const Number = data.get('number').trim()
       const Password = data.get('password').trim()
       const regex = /^(\+221)?[ -]?(7[05678])[ -]?[0-9]{3}[ -]?[0-9]{2}[ -]?[0-9]{2}$/
@@ -79,6 +44,5 @@ export  function loginController(){
          navigateTo('#/home')
       }
    })
->>>>>>> connexion-feature
 }
 
