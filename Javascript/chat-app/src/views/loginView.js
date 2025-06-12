@@ -20,7 +20,7 @@ export function loginView(){
             </div>
             <div class="w-full h-[100px]  flex flex-col mt-5">
               <label for="" class="text-2xl absolute ml-5  bg-white ">Password</label>
-              <input type="text" class="p-5 border-2 rounded-xl outline-none mt-5" placeholder=" Enter  password" id="password" name="password">
+              <input type="password" class="p-5 border-2 rounded-xl outline-none mt-5" placeholder=" Enter  password" id="password" name="password">
            </div>
            <button type="submit" class="w-full p-4 bg-green-400 text-white text-xl font-bold rounded-xl mt-12">sign in </button>`
  

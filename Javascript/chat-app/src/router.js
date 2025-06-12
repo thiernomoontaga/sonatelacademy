@@ -1,9 +1,9 @@
 import {loginView} from './views/loginView'
-import {homePage} from './views/chatView'
+import {homePage} from './views/homeView'
 import {loginController} from './components/LoginForm'
 const routes = {
   "#/login":loginView,
-  "#/chat":homePage
+  "#/home":homePage
 }
 export function router(){
   const app = document.querySelector('#body-app')

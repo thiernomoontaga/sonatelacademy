@@ -2,23 +2,23 @@
   "users": [
     {
       "id": "1",
-      "number": "77 773 27 62",
+      "Number": "777732762",
       "username": "thierno",
-      "password": "1234",
+      "Password": "12345",
       "Archived": false
     },
     {
       "id": "2",
-      "number": "77 253 67 52",
+      "Number": "772536752",
       "username": "Bakary",
-      "password": "bonjour",
+      "Password": "bonjour",
       "Archived": false
     },
     {
       "id": "3",
-      "number": "77 673 97 02",
+      "Number": "776739702",
       "username": "fallou",
-      "password": "12345",
+      "Password": "12345",
       "Archived": false
     }
   ],

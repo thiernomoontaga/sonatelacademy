@@ -1,11 +1,12 @@
+import { apiFetch } from '../services/api.js'
 import {navigateTo} from '../router.js'
-
-export function loginController(){
+import {authentification} from '../services/authService.js'
+export  function loginController(){
    const form = document.querySelector('form')
    if(!form){
      return
    }
-   form.addEventListener('submit',(e)=>{
+   form.addEventListener('submit', async(e)=>{
       e.preventDefault()
       const formData = e.currentTarget
       const data = new FormData(formData)
@@ -18,33 +19,32 @@ export function loginController(){
       const errorPassword = document.createElement('small')
       const errorNumberExist = document.querySelector('#error-number')
       const errorPasswordExist = document.querySelector('#error-password')
+      const users = await authentification()
+      const user = users.find(u => u.Number === Number && u.Password === Password)
+    
       if(errorNumberExist){
          errorNumberExist.remove()
       }
       if(errorPasswordExist){
          errorPasswordExist.remove()
       }
-      if(Number === '' || regex.test(Number)){
+      if(!regex.test(Number) || Number === '' || !users.find(u => u.Number === Number)){
          errorNumber.className = 'text-xl ml-2 mt-2 text-red-600'
          errorNumber.textContent = 'empty field or invalid number !'
          errorNumber.setAttribute('id','error-number')
          inputNumber.insertAdjacentElement('afterend',errorNumber)
       }
-      if(Password === '' || Password !== '123'){
+      if(!users.find(u => u.Password === Password) || Password === ''){
          errorPassword.className = 'text-xl ml-2  mt-2 text-red-600'
          errorPassword.textContent = 'empty field or invalid password !'
          errorPassword.setAttribute('id','error-password')
          inputPassword.insertAdjacentElement('afterend',errorPassword)
       }
-      if(regex.test(Number) && Password === '123'){
-         navigateTo('#/chat')
+      if(user){
+         navigateTo('#/home')
       }
-
    })
 }
 
 
 
-`
-      <small id="error-number" class="text-xl ml-2 mt-3 text-red-600"> empty field or invalid number ! </small>
-`
