@@ -1,4 +1,3 @@
-import {router} from '../router'
 export function homePage(){
 const containerPage = document.createElement('div')
     containerPage.className = 'flex w-[80%] h-[90%] bg-white rounded-xl shadow-2xl'

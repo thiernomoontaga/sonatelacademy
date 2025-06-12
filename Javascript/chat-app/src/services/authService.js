@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // services/authService.js
 export async function login(email, password) {
   const response = await fetch(`http://localhost:3001/users?email=${email}&password=${password}`);
@@ -17,5 +18,23 @@ export function logout() {
 
 export function getCurrentUser() {
   return JSON.parse(localStorage.getItem('user'));
+=======
+import { apiFetch } from "./api.js";
+export async function authentification(){
+   try{
+      const users = await apiFetch('/users',{
+        method:'GET',
+        headers:{
+          "Accept":"Application/json"
+        }
+
+      })
+      return users
+   }
+   catch(error){
+      console.error('error ! :',error)
+  }
+>>>>>>> connexion-feature
 }
+
 

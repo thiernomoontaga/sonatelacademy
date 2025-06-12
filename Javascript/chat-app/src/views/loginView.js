@@ -14,19 +14,15 @@ export function loginView(){
    formContainer.className = 'h-[300px] w-[90%] m-auto mb-[150px] flex flex-col'
    formContainer.setAttribute('id','form')
    formContainer.innerHTML = 
-       ` <div class="w-full h-[100px]  flex flex-col">
-            <label for="" class="text-2xl absolute ml-5 top-[39%] bg-white">Number</label>
-            <input type="text" class="p-5 border-2 rounded-xl outline-none" placeholder=" Enter number" id="number" name="number">
-            
+          ` <div class="w-full h-[100px]  flex flex-col ">
+              <label for="" class="text-2xl absolute ml-5 top-[39%] bg-white">Number</label>
+              <input type="text" class="p-5 border-2 rounded-xl outline-none" placeholder=" Enter number" id="number" name="number">
             </div>
-            <div class="w-full h-[100px]  flex flex-col mt-7">
-              <label for="" class="text-2xl absolute ml-5 top-[53%] bg-white">Password</label>
-              <input type="text" class="p-5 border-2 rounded-xl outline-none" placeholder=" Enter  password" id="password" name="password">
-            
-
-          </div>
-
-          <button type="submit" class="w-full p-4 bg-green-400 text-white text-xl font-bold rounded-xl mt-5">sign in </button>`
+            <div class="w-full h-[100px]  flex flex-col mt-5">
+              <label for="" class="text-2xl absolute ml-5  bg-white ">Password</label>
+              <input type="password" class="p-5 border-2 rounded-xl outline-none mt-5" placeholder=" Enter  password" id="password" name="password">
+           </div>
+           <button type="submit" class="w-full p-4 bg-green-400 text-white text-xl font-bold rounded-xl mt-12">sign in </button>`
  
    boxlogin.appendChild(formContainer)
    return boxlogin

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const BASE_URL = 'http://localhost:3000'
 export async function apiFetch(endpoint,options = {}){
     const url = `${BASE_URL}${endpoint.starWith('/') ? endpoint : `/${endpoint}`}`
@@ -70,3 +71,21 @@ export async function apiFetch(endpoint,options = {}){
 //       throw err;
 //     });
 // }
+=======
+const Base_url = 'http://localhost:3000'
+export async function apiFetch(endpoint,options = {}){
+   const url = `${Base_url}${endpoint}`
+   const response = await fetch(url,{
+    headers:{
+      "Content-Type":"Application/json",
+      ...(options.headers || {})
+    },
+    ...options
+   })
+   if(!response.ok === true){
+     throw new Error("problem with the server")
+   }
+   return response.json()
+}
+
+>>>>>>> connexion-feature

@@ -1,35 +1,18 @@
-// store/store.js
+import { authentification } from "./auth.js";
 
-const state = {
-  user: null,
-  messages: [],
-  selectedChatId: null,
-};
+document.querySelector('#loginForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
 
-const listeners = [];
+  const email = document.querySelector('#email').value;
+  const password = document.querySelector('#password').value;
 
-export const store = {
-  getState() {
-    return state;
-  },
+  const users = await authentification();
+  const user = users.find(u => u.email === email && u.password === password);
 
-  // Pour écouter les changements
-  subscribe(listener) {
-    listeners.push(listener);
-  },
-
-  // Pour mettre à jour une clé
-  set(key, value) {
-    state[key] = value;
-    // Notifier tous les listeners
-    listeners.forEach(listener => listener(state));
-  },
-
-  // Pour réinitialiser (ex: logout)
-  reset() {
-    Object.keys(state).forEach(key => {
-      state[key] = null;
-    });
-    listeners.forEach(listener => listener(state));
+  if (user) {
+    localStorage.setItem('user', JSON.stringify(user));
+    window.location.href = "/dashboard.html";
+  } else {
+    alert("Email ou mot de passe incorrect.");
   }
-};
+});
