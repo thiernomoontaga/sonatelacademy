@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "Number": "777732762",
+        "username": "thierno",
+        "Password": "12345",
+        "Archived": false
+      },
+      {
+        "id": "2",
+        "Number": "772536752",
+        "username": "Bakary",
+        "Password": "bonjour",
+        "Archived": false
+      },
+      {
+        "id": "3",
+        "Number": "776739702",
+        "username": "fallou",
+        "Password": "12345",
+        "Archived": false
+      }
+    ],
+    "messages": [],
+    "contacts": [],
+    "groups": [],
+    "profil": []
+  }
+  
