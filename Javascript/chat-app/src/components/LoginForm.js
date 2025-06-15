@@ -1,6 +1,9 @@
-import { apiFetch } from '../services/api.js'
 import {navigateTo} from '../router.js'
 import {authentification} from '../services/authService.js'
+/**
+ * 
+ * @returns 
+ */
 export  function loginController(){
    const form = document.querySelector('form')
    if(!form){

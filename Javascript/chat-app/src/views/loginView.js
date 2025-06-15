@@ -1,4 +1,4 @@
-
+ 
 export function loginView(){
    const boxlogin = document.createElement('div')
    boxlogin.className = 'h-[80%] w-[30%] bg-white shadow-xl rounded-xl flex flex-col'
