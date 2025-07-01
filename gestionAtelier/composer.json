@@ -1,0 +1,15 @@
+{
+    "name": "gestion/gestion-atelier",
+    "description": "for learning",
+    "autoload": {
+        "psr-4": {
+            "Gestion\\GestionAtelier\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thierno"
+        }
+    ],
+    "require": {}
+}
