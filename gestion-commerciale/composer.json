@@ -1,0 +1,15 @@
+{
+    "name": "projet/gestion_commerciale",
+    "description": "challenge un jour , un projet",
+    "autoload": {
+        "psr-4": {
+            "Projet\\GestionCommerciale\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dohandeim"
+        }
+    ],
+    "require": {}
+}
